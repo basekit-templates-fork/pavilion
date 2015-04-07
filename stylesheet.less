@@ -227,6 +227,15 @@ footer.bk-footer {
 	}
 }
 
+.details-left, .details-right {
+	.map {
+		min-width: 300px;
+		@media @mobile {
+			min-width: inherit;
+		}
+	}
+}
+
 /* - SOCIAL ICONS - */
 
 .widget.profile .bk-profile-socialicons span a,
@@ -709,7 +718,7 @@ input, input[type='text'], input[type=email] {
 .signupform fieldset button,
 .blogsearch form button.blog-search-submit-button {
 	@media @tablet {
-		width: 19%;
+		min-width: 19%;
 	}
 	@media @mobile {
 		width: auto;
